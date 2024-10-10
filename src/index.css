@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* You can add any additional custom styles below this line */
+.remixr-gradient {
+  background: linear-gradient(
+    45deg,
+    #ff00ff,
+    #00ffff,
+    #ff69b4,
+    #ffa500,
+    #1e90ff,
+    #32cd32,
+    #ff1493,
+    #ff00ff
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient 8s ease infinite;
+  background-size: 400% 400%;
+}
+
+.tagline-gradient {
+  background: linear-gradient(
+    45deg,
+    #ff69b4,
+    #ff4500,
+    #ffa500
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

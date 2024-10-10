@@ -1,0 +1,193 @@
+/* Set modern font style */
+body, h3, ul, p {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header styles */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #dcdcdc;
+  height: 50px;
+}
+
+#header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #505050;
+}
+
+/* Columns layout */
+.main {
+  display: flex;
+  flex: 1;
+  overflow: hidden; /* Prevent overflow of the main container */
+}
+
+/* Menu styles */
+#menu {
+  width: 200px; /* Fixed width for the menu */
+  background-color: #f0f0f0;
+  padding-top: 10px;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+#menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#menu li {
+  margin: 15px 0;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+#menu li:hover {
+  background-color: #ddd;
+  transition: 0.3s;
+}
+
+#menu li::before {
+  content: '➡️';
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Tool and Results columns */
+#tool, #results {
+  width: 400px; /* Fixed width for both columns */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Hide overflow */
+}
+
+#results {
+  background-color: #f9f9f9;
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+}
+
+/* Chat box styles */
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.chat-message {
+  padding: 8px 12px;
+  background-color: #e1e1e1;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.user-message {
+  background-color: #d1f7d1;
+}
+
+/* Form styles */
+.form-container {
+  display: flex;
+  margin-top: 10px;
+}
+
+.form-container input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-container button {
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-container button:hover {
+  background-color: #005f8a;
+}
+
+/* Combined submit button */
+#combined-submit {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #808080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#combined-submit:hover {
+  background-color: #696969;
+}
+
+/* Valuation tool styles */
+.valuation-tool {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.valuation-tool input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(100% - 18px);
+}
+
+.valuation-tool button {
+  width: 100%;
+}
+
+/* Send to AI button styles */
+.send-to-ai-button {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.send-to-ai-button:hover {
+  background-color: #005f8a;
+}
